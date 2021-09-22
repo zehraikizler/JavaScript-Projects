@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project-4</title>
+</head>
+<body>
+    
+    <script>
+        function renkDegis() {
+            var renk1 = Math.round(Math.random()*255);
+            var renk2 = Math.round(Math.random()*255);
+            var renk3 = Math.round(Math.random()*255);
+
+            document.body.style.background = `rgb(${renk1}, ${renk2}, ${renk3})`;
+        }
+
+        degistir = setInterval(renkDegis, 3000);
+    </script>
+</body>
+</html>
