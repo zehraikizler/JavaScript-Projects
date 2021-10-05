@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project-10</title>
+    <style>
+    .sayfa {
+        width: 360px;
+        margin: auto;
+    }
+    table {
+        background: #efefef;
+        border-spacing: 10px;
+        text-align: center;
+    }
+    table .btn {
+        width: 60px;
+        background: gray;
+        text-align: center;
+        line-height: 60px;
+        color: #fff;
+        font-size: 1.5em;
+    }
+    #islem, #gosterge {
+        padding: 5px;
+        text-align: right;
+    }
+    #gosterge {
+        height: 60px;
+        background: #ddfafa;
+        color: #333;
+        font-size: 1.8em;
+        text-align: right;
+        line-height: 40px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    #islem {
+        background: #aaa;
+    }
+    </style>
+</head>
+<body>
+    <div class="sayfa">
+        <h1>Hesap Makinesi</h1>
+        <table>
+            <tr>
+                <td colspan="5" id="islem"></td>
+            </tr>
+            <tr>
+                <td colspan="5" id="gosterge">0</td>
+            </tr>
+            <tr>
+                <td class="btn btnRakam">7</td>
+                <td class="btn btnRakam">8</td>
+                <td class="btn btnRakam">9</td>
+                <td class="btn btnOpt">/</td>
+                <td class="btn btnCe">CE</td>
+            </tr>
+            <tr>
+                <td class="btn btnRakam">4</td>
+                <td class="btn btnRakam">5</td>
+                <td class="btn btnRakam">6</td>
+                <td class="btn btnOpt">*</td>
+                <td class="btn btnC">C</td>
+            </tr>
+            <tr>
+                <td class="btn btnRakam">1</td>
+                <td class="btn btnRakam">2</td>
+                <td class="btn btnRakam">3</td>
+                <td class="btn btnOpt">-</td>
+                <td rowspan="2" class="btn">=</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="btn btnRakam">0</td>
+                <td class="btn">.</td>
+                <td class="btn btnOpt">+</td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
