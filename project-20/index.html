@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project-20</title>
+    <style>
+        body{
+            margin: 30px 60px;
+        }
+        button {
+            border: none;
+            color: white;
+            background: rgb(101, 101, 253);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        dialog{
+            border: none;
+            padding: 20px;
+        }
+        dialog::backdrop{
+            background: rgb(160, 160, 255);
+        }
+        menu{
+            padding: 0;
+        }     
+    </style>
+</head>
+<body>
+    <button id="ac">Modal'ı Aç</button>
+    <output>Bilgiler</output>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod molestias maiores fugiat voluptate accusantium. Odio, nulla dolorum sequi hic rerum repudiandae illum architecto? Illo suscipit quas rem corrupti maiores nam?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod molestias maiores fugiat voluptate accusantium. Odio, nulla dolorum sequi hic rerum repudiandae illum architecto? Illo suscipit quas rem corrupti maiores nam?
+    </p>
+
+    <dialog id="modal">
+        <form method="dialog">
+            <h2>Abonelik Talebi</h2>
+            <p>Abonelik Sözleşmesini kabul etmek için "Tamam" butonuna tıklayın.</p>
+            <menu>
+                <button value="onay" id="onay">Tamam</button>
+                <button value="iptal" id="iptal">İptal</button>
+            </menu>
+        </form>
+    </dialog>
+
+    <script src="main.js"></script>
+</body>
+</html>
