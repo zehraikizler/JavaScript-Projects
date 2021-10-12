@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project-18</title>
+    <style>
+        #sayfa{
+            width: 300px;
+            position: absolute;
+            left: 40%;
+        }
+        label, input {
+            display: block;
+            padding: 3px;
+            border-radius: 4px;
+        }
+        button{
+            background: rgb(253, 67, 67);
+            color: white;
+            border: none;
+            padding: 9px;
+            width: 180px;
+            margin: 15px 0;
+        }
+        table{
+            background: rgb(87, 87, 255);
+            color: white;
+        }
+        td{
+            padding: 10px 30px;
+            border: 1px solid white;
+        }
+    </style>
+</head>
+<body>
+    <div id="sayfa">
+        <label for="ad">Ad:</label>
+        <input type="text" id="ad">
+        <label for="soyad">Soyad:</label>
+        <input type="text" id="soyad">
+        <label for="yas">Yaş:</label>
+        <input type="number" id="yas">
+        <button id="ekle">Tabloya Ekle</button>
+
+        <table id="liste">
+            <tr>
+                <td>Ad</td>
+                <td>Soyad</td>
+                <td>Yaş</td>
+            </tr>
+        </table>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
