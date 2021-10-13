@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+.zemin{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -100vw;
+    background: rgba(0,0,0,.9);
+    overflow-x: hidden;
+    transition: 2s;
+}
+.zemin-icerik{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+}
+.zemin a{
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: #818181;
+    transition: .4s;
+    font-size: 36px;
+    border-top: solid 2px rgba(241,241,241,0);
+    border-bottom: solid 2px rgba(241,241,241,0);
+}
+.zemin-icerik a:hover, .zemin-icerik a:focus{
+    color: #f1f1f1;
+    border-top: solid 2px #f1f1f1;
+    border-bottom: solid 2px #f1f1f1;
+    background: #b71540;
+}
+.zemin .kapatBtn{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    font-size: 60px;
+}
+span{
+    padding: 20px;
+    font-size: 25px;
+}
+span:hover{
+    cursor: pointer;
+}
